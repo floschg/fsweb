@@ -1,0 +1,39 @@
+:root {
+    --bg-default: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-default);
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    color: #e8e6e3;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;  /* center the container horizontally */
+    padding: 0 30px; /* add small padding on left & right for content */
+}
+
+a:link {
+    color: #64B5F6;
+}
+a:visited {
+    color: #9575CD;
+}
+a:hover {
+    color: #90CAF9;
+}
+a:active {
+    color: #FF8A80;
+}

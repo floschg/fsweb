@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - fsweb{% endblock %}
+
+{% block content %}
+Create account.<br>
+<form method="post">{% csrf_token %}
+    <input name="username"  type="text" placeholder="username"><br>
+    <input name="password1" type="text" placeholder="password"><br>
+    <input name="password2" type="text" placeholder="password confirmation"><br>
+    <input name="email"     type="text" placeholder="email (optional)"><br>
+    <button type="submit">Register</button>
+</form>
+<br>
+{{ form.errors }}
+<br>
+Already have an account? <a href="/accounts/login">Go to Login</a>
+{% endblock %}
